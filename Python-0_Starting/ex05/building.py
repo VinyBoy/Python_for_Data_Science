@@ -3,6 +3,7 @@ import string
 
 
 def count_and_print(text):
+    """Analyse & count each type of charactere and print how many are there"""
     charactere_count = len(text)
     upper_count = 0
     lower_count = 0
@@ -29,6 +30,7 @@ def count_and_print(text):
 
 
 def print_error():
+    """Print the error"""
     print("Error: To much arguments")
 
 
