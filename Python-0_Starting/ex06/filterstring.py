@@ -1,19 +1,11 @@
 import sys
+from ft_filter import ft_filter
 
-
-def ft_filter(function, iterable):
-    """USe filter with lamda on element of iterable and return the result"""
-    result = []
-    for element in iterable:
-        if function(element):
-            result.append(element)
-    return result
-    
 
 def check_arg(arg2) -> bool:
     """Check if arg2 is int"""
     try:
-        n = int(arg2)
+        int(arg2)
     except ValueError:
         return (False)
     return (True)
@@ -35,7 +27,6 @@ def main():
     n = int(sys.argv[2])
     result = ft_filter(lambda word: len(word) > n, words)
     print(result)
-    
 
 
 if __name__ == "__main__":
